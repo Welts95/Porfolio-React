@@ -1,21 +1,38 @@
-import logo from "./logo.svg";
+/* eslint-disable array-callback-return */
 import "./App.css";
+import { Home } from "./pages/Home";
+import { Navegacion } from "./pages/Navigation";
+import { Cabecera } from "./pages/Header";
+import { Aside } from "./pages/Aside";
+import { Footer } from "./pages/Footer";
 
-function App() {
+function Contenido() {
   return (
-    <div class="Container">
-      <header>HEADER</header>
-      <div class="Container-body">
-        <main class="Container-content">CONTAINER</main>
-        <nav class="Container-nav">NAVEGACIO</nav>
-        <aside class="Container-ads">ADS</aside>
-      </div>
-      <footer>FOOTER</footer>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <div className="Container">
+      <Cabecera />
+      <div className="Container-body border-gradient border-gradient-purple">
+        <div className="Container-body-top">
+          <Navegacion />
+        </div>
+        <div className="Container-body-under">
+          <main className="Container-content">
+            <Contenido />
+          </main>
+          <Aside />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
 
 /*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

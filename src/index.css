@@ -1,13 +1,35 @@
+:root {
+  --turquesa: #00ffd5;
+  --turquesaOscuro: #45a29e;
+  --azulOscuro: #0c1014;
+  --blanco: white;
+  --grisClaro: rgb(232, 250, 255);
+  --gris: #50555b31;
+  --grisOscuro: #38393b;
+  --black: rgba(0, 0, 0, 0.856);
+
+  --backgroundDark: linear-gradient(
+    90deg,
+    var(--grisOscuro) 0%,
+    var(--azulOscuro) 100%
+  );
+  --backgroundClear: linear-gradient(
+    90deg,
+    var(--blanco) 0%,
+    var(--grisClaro) 100%
+  );
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
