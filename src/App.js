@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import "./App.css";
+import "./assets/App.css";
 import { Home } from "./pages/Home";
 import { Navegacion } from "./pages/Navigation";
 import { Cabecera } from "./pages/Header";
@@ -26,8 +26,8 @@ export default function App() {
           <main className="Container-content">
             <Contenido />
           </main>
-          <Aside />
         </div>
+        <Aside />
       </div>
       <Footer />
     </div>

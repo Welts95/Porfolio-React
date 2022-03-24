@@ -3,7 +3,7 @@ export function Home() {
     <>
       <div className="content-Home">
         <h1>
-          Soy <b>Gerard Hueltes</b> y soy
+          Soy <b>Gerard Hueltes</b>,
           <br />
           <span className="content-programador">PR0GR@M@D0R</span>
         </h1>
