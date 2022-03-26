@@ -1,0 +1,10 @@
+.SocialIcons {
+  filter: invert(79%) sepia(16%) saturate(1194%) hue-rotate(127deg)
+    brightness(82%) contrast(90%);
+  cursor: pointer;
+}
+
+.SocialIcons:hover {
+  filter: invert(74%) sepia(88%) saturate(969%) hue-rotate(104deg)
+    brightness(107%) contrast(102%) drop-shadow(0 0 0.5em var(--principal));
+}

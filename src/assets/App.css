@@ -61,22 +61,21 @@
   display: flex;
   font-size: 1.5em;
   text-align: right;
-  padding: 0 1em 0.6em 0;
+  padding: 0 0.8em 0.6em 0;
   justify-content: right;
-  column-gap: 0.3em;
+  column-gap: 0.4em;
 }
 .Container-ads img {
-  width: 4vh;
-  fill: var(--principal);
+  width: calc(1.2vw + 1.7vh);
 }
 
 .Container-nav {
   order: -1;
   display: flex;
-  font-size: 1.2em;
+  font-size: calc(1vw + 0.9vh);
   text-align: left;
   justify-content: flex-end;
-  column-gap: 1.2em;
+  column-gap: 1em;
   padding: 0.6em 1em 0 0;
 }
 
@@ -93,10 +92,10 @@
 
 .content-programador {
   color: var(--principal);
-  font-size: calc(1.4em + 1.4vw);
+  font-size: calc(2.7vh + 2.9vw);
   text-shadow: 0 0 0.3em var(--principal);
   letter-spacing: 1px;
-  animation: 4s glow infinite alternate;
+  animation: 3s glow infinite alternate;
 }
 
 @keyframes glow {
