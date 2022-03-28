@@ -3,36 +3,40 @@ import "../assets/Icons.css";
 export function Aside() {
   const icons = [
     {
-      id: "instagram",
-      link: "/icons/instagram.svg",
-      alt: "Icono de Instagram",
-    },
-
-    {
-      id: "facebook",
-      link: "/icons/facebook.svg",
-      alt: "Icono de Facebook",
-    },
-    {
       id: "github",
-      link: "/icons/github.svg",
+      source: "/icons/github.svg",
       alt: "Icono de Github",
+      link: "https://github.com/Welts95",
     },
     {
       id: "linkedin",
-      link: "/icons/linkedin.svg",
+      source: "/icons/linkedin.svg",
       alt: "Icono de Linkedin",
+      link: "",
     },
-
+    {
+      id: "facebook",
+      source: "/icons/facebook.svg",
+      alt: "Icono de Facebook",
+      link: "",
+    },
+    {
+      id: "instagram",
+      source: "/icons/instagram.svg",
+      alt: "Icono de Instagram",
+      link: "https://www.instagram.com/gh.designs.slot/",
+    },
     {
       id: "Dropbox",
-      link: "/icons/dropbox.svg",
+      source: "/icons/dropbox.svg",
       alt: "Icono de Dropbox",
+      link: "",
     },
     {
       id: "googleMas",
-      link: "/icons/google-plus.svg",
+      source: "/icons/google-plus.svg",
       alt: "Icono de Google Mas",
+      link: "",
     },
   ];
   return (
@@ -40,15 +44,15 @@ export function Aside() {
       <aside className="Container-ads">
         {icons.map((item, i) => {
           return (
-            <img
-              id={item.id}
-              className="SocialIcons"
-              src={process.env.PUBLIC_URL + item.link}
-              key={i}
-              alt={item.alt}
-            >
-              {item.text}
-            </img>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              <img
+                id={item.id}
+                className="SocialIcons"
+                src={process.env.PUBLIC_URL + item.source}
+                key={i}
+                alt={item.alt}
+              />
+            </a>
           );
         })}
       </aside>

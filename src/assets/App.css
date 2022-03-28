@@ -98,6 +98,20 @@
   animation: 3s glow infinite alternate;
 }
 
+.Container-footer {
+  display: flex;
+  font-size: calc(0.8vh + 0.8vw);
+  justify-content: center;
+  column-gap: 0.3em;
+  margin-bottom: 0.8em;
+  align-items: stretch;
+}
+
+.Container-footer img {
+  width: 2.4vw;
+  height: 2.4vh;
+}
+
 @keyframes glow {
   from {
     color: var(--principal);
