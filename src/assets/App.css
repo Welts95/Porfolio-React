@@ -6,6 +6,16 @@
   height: 100vh;
   color: var(--blanco);
   background-image: var(--backgroundDark);
+  text-shadow: 0.4em 0.5em 1em var(--black);
+}
+.Container h1 {
+  font-size: calc(2.2vh + 2.2vw);
+  margin: 0 0 4% 0;
+}
+.Container h2 {
+  text-shadow: none;
+  font-weight: lighter;
+  padding: 0 5% 3% 5%;
 }
 
 .Container-header {
@@ -22,7 +32,8 @@
 }
 
 .Container-header a:hover,
-.Container-nav a:hover {
+.Container-nav a:hover,
+.ContactForm.Button:hover {
   color: var(--principal);
   text-shadow: 0 0 1em var(--principal);
 }
@@ -32,7 +43,7 @@
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 2% 3% 3% 3%;
+  margin: 2% 3% 2% 3%;
   border: 0.25em solid var(--principal);
   border-radius: 0.6em;
   background-color: var(--gris);
@@ -49,7 +60,8 @@
 }
 
 .Container-content {
-  flex-grow: 1;
+  flex: 1;
+  padding: 0 8% 0 8%;
 }
 
 .Container-nav,
@@ -108,8 +120,56 @@
 }
 
 .Container-footer img {
-  width: 2.4vw;
-  height: 2.4vh;
+  width: calc(0.8vw + 1.1vh);
+}
+
+.Container-footer a {
+  padding-top: calc(0.12vw + 0.12vh);
+}
+
+.ContactForm-Container {
+  padding: 0 auto;
+}
+
+.ContactForm {
+  font-size: calc(1.2vw + 1.2vh);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 5px var(--black);
+}
+
+.ContactForm.Button {
+  font-size: calc(1vw + 1vh);
+  align-self: flex-end;
+  margin-left: auto;
+  background: rgba(41, 41, 41, 0.219);
+  border: 2px solid var(--principal);
+  border-radius: 5px;
+  color: var(--turquesaOscuro);
+}
+
+.ContactForm-input {
+  font-size: calc(1vw + 1vh);
+  width: 75%;
+  border-radius: 5px;
+  border: 2px solid var(--principal);
+  background: rgba(41, 41, 41, 0.219);
+  color: var(--turquesaOscuro);
+  -webkit-text-fill-color: none;
+}
+
+.ContactForm-input.message {
+  height: 15vh;
+  resize: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--turquesaOscuro) !important;
 }
 
 @keyframes glow {
@@ -123,34 +183,7 @@
   }
 }
 
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes React-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -158,4 +191,16 @@
     transform: rotate(360deg);
   }
 }
-*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .React-logo {
+    animation: React-logo-spin infinite 5s linear;
+    transition: 0.5s;
+  }
+  .React-logo:hover {
+    animation: React-logo-spin infinite 2s linear;
+  }
+  .React-logo:hover:after {
+    transition: 0.5s;
+  }
+}

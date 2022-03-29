@@ -7,7 +7,7 @@ export function Footer() {
           <img
             src={process.env.PUBLIC_URL + "/icons/react.svg"}
             alt="Logo React"
-            className="SocialIcons"
+            className="SocialIcons React-logo"
           />
         </a>
       </footer>
