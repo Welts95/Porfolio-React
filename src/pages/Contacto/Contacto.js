@@ -47,7 +47,7 @@ export default function Contacto() {
           </div>
           <div className="ContactForm">
             <button className="ContactForm Button" type="submit">
-              Envia un mensaje
+              Envía un mensaje
             </button>
           </div>
         </form>
